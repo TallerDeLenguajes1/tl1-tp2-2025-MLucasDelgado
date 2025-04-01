@@ -11,11 +11,11 @@ srand(time(NULL));
 #define N 20
     int i;
     double vt[N];
-    double *puntero = vt; // Apunta al primer elemento del array
+    double *puntero = &vt[0]; // Apunta al primer elemento del array
     for (i = 0; i < N; i++)
     {
-        vt[i] = 1 + rand() % 100;
-        printf("%.2lf \n", puntero[i]);
+        *(puntero + i) = 1 + rand() % 100;
+        printf("%.2lf \n", *(puntero + i));
 
     }
 
