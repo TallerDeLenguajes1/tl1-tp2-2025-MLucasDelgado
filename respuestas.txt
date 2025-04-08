@@ -1,0 +1,8 @@
+PREGUNTA 1: ¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+No, no se puede ver el archivo tp2_1_2.c estando en la rama main, porque ese archivo fue creado en la rama Opcion_2. Git mantiene separadas las modificaciones hechas en distintas ramas hasta que se hace un merge (fusión) entre ellas.
+
+PREGUNTA 2: En VSCode vuelva al “Source Control” ¿Qué diferencias nota?
+En la vista de Source Control podemos observar una diferencia visual en el historial de versiones. Aparece una representación gráfica de las ramas, y si se marca la opción “All”, se pueden ver los commits realizados en ambas ramas (main y Opcion_2).
+
+PREGUNTA 3: En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
+Despues de realizar el comando git merge Opcion_2 en la rama main, se puede ver que los archivos creados o modificados en Opcion_2 ahora también están presentes en main. En particular, el archivo tp2_1_2.c se fusiona al historial de main, y se ve como parte del proyecto. La vista gráfica muestra la unión de estas ramas.
